@@ -12,4 +12,17 @@ class UserController extends Controller
     {
         return "Sayed Ashraf";
     }
+
+    public function getIndex()
+    {
+        $data=[];
+        $data['id']=5;
+        $data['name']='sayed';
+
+        $obj = new \stdClass();
+        $obj->foo = 'bar';
+        $obj->id = 20;
+        $obj->name='Ashroof';
+        return view('welcome', compact('obj'));
+    }
 }
