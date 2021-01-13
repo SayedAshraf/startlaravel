@@ -15,14 +15,18 @@ class UserController extends Controller
 
     public function getIndex()
     {
-        $data=[];
-        $data['id']=5;
-        $data['name']='sayed';
+        // $data=[];
+        // $data['id']=5;
+        // $data['name']='sayed';
 
-        $obj = new \stdClass();
-        $obj->foo = 'bar';
-        $obj->id = 20;
-        $obj->name='Ashroof';
-        return view('welcome', compact('obj'));
+        // $obj = new \stdClass();
+        // $obj->foo = 'bar';
+        // $obj->id = 20;
+        // $obj->name='Ashroof';
+
+        $data = ['Sayed', 'Ahmed' , 'MOhamed'];
+        // $data = [];
+
+        return view('welcome', compact('data'));
     }
 }

@@ -12,11 +12,16 @@ Route::get('/', function () {
 
 Route::get('index', 'Front\UserController@getIndex');
 
+Route::get('landing', 'Front\FirstController@HomePage');
+
+Route::get('about', 'Front\FirstController@AboutUS');
+
 Route::get('/test', function () {
     return "Welcome laravel";
 });
 
 //Parameter Route
+
 // {} required parameter
 Route::get('/show-number/{id}', function ($id) {
     return $id;
