@@ -85,11 +85,11 @@
             <p>{{ $_data }}</p>
         @endforeach --}}
 
-        @forelse ($data as $_data)
-            <p>{{ $_data }}</p>
+        {{-- @forelse ($data as $_data)
+        <p>{{ $_data }}</p>
         @empty
-            <h1>empty arry</h1>
-        @endforelse
+        <h1>empty arry</h1>
+        @endforelse --}}
 
     </div>
 </body>
